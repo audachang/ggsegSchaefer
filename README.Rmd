@@ -97,6 +97,16 @@ dt %>%
   pull(Item) %>% 
   lapply(save3d)
 ```
+### Cerebellum SUIT atlas
+
+The package can also render the cerebellar SUIT atlas if the `ggsegExtra` package is installed. Use `suit_atlas()` to load it:
+
+```{r suit-demo, eval=FALSE}
+if(requireNamespace("ggsegExtra", quietly = TRUE)) {
+  ggseg::ggseg(atlas = suit_atlas())
+}
+```
+
 
 ```{r echo=FALSE, out.width="30%"}
 knitr::include_graphics(list.files("man/figures/", "schaefer", full.names = TRUE))
