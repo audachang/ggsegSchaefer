@@ -4,3 +4,5 @@ import(ggplot2)
 import(ggseg)
 import(ggseg3d)
 importFrom(ggseg,brain_atlas)
+
+export(suit_atlas)

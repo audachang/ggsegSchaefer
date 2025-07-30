@@ -68,6 +68,17 @@ ggseg3d(atlas = schaefer7_400_3d, surface = "inflated") %>%
 
 <img src="man/figures//README-schaefer17_100_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_1000_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_200_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_300_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_400_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_500_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_600_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_700_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_800_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer17_900_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_100_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_1000_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_200_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_300_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_400_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_500_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_600_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_700_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_800_3d-plot.png" width="30%" /><img src="man/figures//README-schaefer7_900_3d-plot.png" width="30%" />
 
+
+### Cerebellum SUIT atlas
+
+The package can also render the cerebellar SUIT atlas if the `ggsegExtra` package is installed. Use `suit_atlas()` to load it:
+
+``` r
+if(requireNamespace("ggsegExtra", quietly = TRUE)) {
+  ggseg::ggseg(atlas = suit_atlas())
+}
+```
+
 Please note that the ‘ggsegSchaefer’ project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
 this project, you agree to abide by its terms.
